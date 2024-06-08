@@ -19,6 +19,20 @@ body {
   color: #363636;
 }
 
+section dl {
+  margin: auto auto auto 10%;
+  text-align: justify;
+  word-break: break-word;
+}
+
+section dd {
+  text-indent: 10%;
+}
+
+section a {
+  text-decoration: none;
+}
+
 .header>img {
   border-radius: 10%;
   width: 150px;
@@ -55,14 +69,16 @@ img.ico {
   margin-top: 10px;
   width: 30px;
   border-radius: 15%;
-  filter: grayscale(1)
+  filter: grayscale(1);
+  transition: 0.3s;
 }
 
 img:hover {
   cursor: pointer;
-  filter: grayscale(0);
   border-radius: 50%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  filter: grayscale(0);
 }
 
 .detalhes>h2 {
@@ -83,13 +99,4 @@ img:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     padding: 2%;
   }
-
-  img.ico {
-    margin-top: 10px;
-    width: 30px;
-    border-radius: 15%;
-    filter: none;
-  }
-
-}
 }
