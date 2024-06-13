@@ -4,12 +4,13 @@
   padding: 0;
 }
 
-div#interface {
+#interface {
   background-color: #f0f0f0;
   width: 700px;
   margin: 20px auto 20px auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
+  border-radius: 10px;
 }
 
 body {
@@ -73,7 +74,11 @@ img.ico {
   transition: 0.3s;
 }
 
-img:hover {
+img.cursos{
+  max-width: 90%;
+}
+
+img.ico:hover, .img:hover {
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -91,8 +96,17 @@ img:hover {
   font-weight: 700;
 }
 
+footer p {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 0px;
+}
+
 @media screen and (max-width: 768px) {
-  div#interface {
+  #interface {
     background-color: #f0f0f0;
     width: 50%;
     margin: 2% auto 2% auto;
